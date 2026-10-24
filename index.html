@@ -164,8 +164,7 @@
                             <div class="absolute -bottom-6 -right-4 bg-brand-purple text-white p-4 rounded-2xl shadow-xl flex items-center space-x-3 border-2 border-white">
                                 <i class="fa-solid fa-heart text-pink-300 text-xl"></i>
                                 <div>
-                                    <p class="text-xs uppercase tracking-wider font-semibold text-brand-lavender">Generations of Love</p>
-                                    <p class="text-sm font-serif font-bold">Mama & Vivian Adele</p>
+                                    <p class="text-xs uppercase tracking-wider font-semibold text-brand-lavender">Thank you for stopping by!</p>
                                 </div>
                             </div>
                         </div>
@@ -178,11 +177,11 @@
                             <span>My Story & Legacy</span>
                         </div>
                         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-darkPurple">
-                            Hi, I'm Monika
+                            Hi, I'm Monika and it's nice to meet you!
                         </h2>
                         <div class="space-y-4 text-gray-700 leading-relaxed text-base sm:text-lg font-light">
                             <p>
-                                Crochet has been in my heart for as long as I can remember. I was blessed to be taught by my sweet grandmother (pictured here with me). Watching her transform simple strands of yarn into intricate, warm blankets and clothing showed me the true magic of handmade crafts.
+                                Crochet has been in my heart for as long as I can remember. I was blessed to be taught by my sweet grandmother. Watching her transform simple strands of yarn into intricate, warm blankets and clothing showed me the true magic of handmade crafts.
                             </p>
                             <p>
                                 Every piece I create—whether it's a cozy custom baby blanket for a newborn, a whimsical plushie, or custom wearable fashion—is stitched with that same tenderness, care, and love passed down through generations.
@@ -639,6 +638,7 @@
 
         function openLessonModal(lessonType) {
             document.getElementById('modalLessonType').value = lessonType;
+            document.getElementById('lessonModal').classList.add('hidden'); // placeholder
             document.getElementById('lessonModal').classList.remove('hidden');
         }
 
