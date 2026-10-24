@@ -55,8 +55,8 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo & Name -->
                 <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-12 h-12 rounded-full bg-brand-purple flex items-center justify-center text-white text-xl font-bold shadow-md group-hover:scale-105 transition-transform duration-200">
-                        <i class="fa-solid font-serif text-2xl">VA</i>
+                    <div class="w-12 h-12 rounded-full bg-brand-purple flex items-center justify-center overflow-hidden shadow-md group-hover:scale-105 transition-transform duration-200">
+                        <img src="VivianAdeleLogo.jpg" alt="Logo" class="w-full h-full object-cover" onerror="this.outerHTML='<span class=\'text-white text-xl font-bold font-serif\'>VA</span>'">
                     </div>
                     <div>
                         <span class="block text-xl sm:text-2xl font-serif font-bold text-brand-darkPurple tracking-tight">Vivian Adele's Crochet</span>
@@ -638,7 +638,6 @@
 
         function openLessonModal(lessonType) {
             document.getElementById('modalLessonType').value = lessonType;
-            document.getElementById('lessonModal').classList.add('hidden'); // placeholder
             document.getElementById('lessonModal').classList.remove('hidden');
         }
 
