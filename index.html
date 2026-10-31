@@ -243,6 +243,7 @@
                             </div>
                             <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                                 <button type="button" onclick="openTeddyModal()" class="bg-brand-purple hover:bg-brand-darkPurple text-white px-5 py-2 rounded-xl text-sm font-semibold transition-colors">Ready Made</button>
+                                <button type="button" onclick="openOrderModal('Handcrafted Teddy Bears')" class="bg-white border border-brand-purple text-brand-purple hover:bg-brand-lightLavender px-4 py-2 rounded-xl text-sm font-semibold transition-colors">Inquiry/Order</button>
                             </div>
                         </div>
                     </div>
@@ -265,6 +266,7 @@
                             </div>
                             <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                                 <button type="button" onclick="openPuffCatModal()" class="bg-brand-purple hover:bg-brand-darkPurple text-white px-5 py-2 rounded-xl text-sm font-semibold transition-colors">Ready Made</button>
+                                <button type="button" onclick="openOrderModal('Puff Kitties Collection')" class="bg-white border border-brand-purple text-brand-purple hover:bg-brand-lightLavender px-4 py-2 rounded-xl text-sm font-semibold transition-colors">Inquiry/Order</button>
                             </div>
                         </div>
                     </div>
@@ -287,6 +289,7 @@
                             </div>
                             <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                                 <button type="button" onclick="openDollModal()" class="bg-brand-purple hover:bg-brand-darkPurple text-white px-5 py-2 rounded-xl text-sm font-semibold transition-colors">Ready Made</button>
+                                <button type="button" onclick="openOrderModal('Custom Dressed Dolls')" class="bg-white border border-brand-purple text-brand-purple hover:bg-brand-lightLavender px-4 py-2 rounded-xl text-sm font-semibold transition-colors">Inquiry/Order</button>
                             </div>
                         </div>
                     </div>
@@ -309,6 +312,7 @@
                             </div>
                             <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
                                 <button type="button" onclick="openWearableModal()" class="bg-brand-purple hover:bg-brand-darkPurple text-white px-5 py-2 rounded-xl text-sm font-semibold transition-colors">Ready Made</button>
+                                <button type="button" onclick="openOrderModal('Custom Wearables')" class="bg-white border border-brand-purple text-brand-purple hover:bg-brand-lightLavender px-4 py-2 rounded-xl text-sm font-semibold transition-colors">Inquiry/Order</button>
                             </div>
                         </div>
                     </div>
@@ -323,13 +327,13 @@
                             <!-- Image Gallery Preview -->
                             <div class="p-4 bg-brand-lightLavender/50 flex flex-col justify-center space-y-3">
                                 <div class="grid grid-cols-3 gap-2">
-                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-pointer transform hover:scale-105 transition-transform" onclick="openGalleryModal('Teal baby blanket.png', 'Teal Gradient Baby Blanket')">
+                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-zoom-in transform hover:scale-105 transition-transform" onclick="openGalleryModal('Teal baby blanket.png', 'Teal Gradient Baby Blanket')">
                                         <img src="Teal baby blanket.png" onerror="this.src='https://placehold.co/300x300/6B3E75/ffffff?text=Teal+Blanket'" alt="Teal Gradient Blanket" class="w-full h-full object-cover">
                                     </div>
-                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-pointer transform hover:scale-105 transition-transform" onclick="openGalleryModal('Pink-chunky-baby-blanket.jpg', 'Soft Pink Chenille Blanket')">
+                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-zoom-in transform hover:scale-105 transition-transform" onclick="openGalleryModal('Pink-chunky-baby-blanket.jpg', 'Soft Pink Chenille Blanket')">
                                         <img src="Pink-chunky-baby-blanket.jpg" onerror="this.src='https://placehold.co/300x300/6B3E75/ffffff?text=Pink+Blanket'" alt="Soft Pink Chenille Blanket" class="w-full h-full object-cover">
                                     </div>
-                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-pointer transform hover:scale-105 transition-transform" onclick="openGalleryModal('Blue baby blanket.png', 'Blue Striped Baby Blanket')">
+                                    <div class="rounded-xl overflow-hidden shadow h-28 cursor-zoom-in transform hover:scale-105 transition-transform" onclick="openGalleryModal('Blue baby blanket.png', 'Blue Striped Baby Blanket')">
                                         <img src="Blue baby blanket.png" onerror="this.src='https://placehold.co/300x300/6B3E75/ffffff?text=Blue+Blanket'" alt="Blue Striped Blanket" class="w-full h-full object-cover">
                                     </div>
                                 </div>
@@ -634,8 +638,9 @@
             
             <div class="overflow-y-auto space-y-4 pr-2 flex-grow">
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Black bear.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Black+Bear'" alt="Black bear" onclick="openGalleryModal(\'Black bear.png\', \'Black bear\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Black bear.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Black+Bear'" alt="Black bear" onclick="openGalleryModal(\'Black bear.png\', \'Black bear\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Black Bear</p>
+                    <button type="button" onclick="addToCart('Black Bear', 'Black bear.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
                     <img src="White and blue bear.png" alt="White and blue bear" onclick="openGalleryModal('White and blue bear.png', 'White and Blue Bear')" class="w-full h-64 object-cover rounded-xl cursor-zoom-in">
@@ -643,16 +648,19 @@
                     <button type="button" onclick="addToCart('White and Blue Bear', 'White and blue bear.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Hot Pink Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Hot+Pink+Small+Bear'" alt="Hot Pink Small Bear" onclick="openGalleryModal(\'Hot Pink Small Bear.jpg\', \'Hot Pink Small Bear\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Hot Pink Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Hot+Pink+Small+Bear'" alt="Hot Pink Small Bear" onclick="openGalleryModal(\'Hot Pink Small Bear.jpg\', \'Hot Pink Small Bear\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Hot Pink Small Bear</p>
+                    <button type="button" onclick="addToCart('Hot Pink Small Bear', 'Hot Pink Small Bear.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Ligh Pink Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Light+Pink+Small+Bear'" alt="Light Pink Small Bear" onclick="openGalleryModal(\'Ligh Pink Small Bear.jpg\', \'Light Pink Small Bear\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Ligh Pink Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Light+Pink+Small+Bear'" alt="Light Pink Small Bear" onclick="openGalleryModal(\'Ligh Pink Small Bear.jpg\', \'Light Pink Small Bear\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Light Pink Small Bear</p>
+                    <button type="button" onclick="addToCart('Light Pink Small Bear', 'Ligh Pink Small Bear.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Navy Blue Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Navy+Blue+Small+Bear'" alt="Navy Blue Small Bear" onclick="openGalleryModal(\'Navy Blue Small Bear.jpg\', \'Navy Blue Small Bear\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Navy Blue Small Bear.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Navy+Blue+Small+Bear'" alt="Navy Blue Small Bear" onclick="openGalleryModal(\'Navy Blue Small Bear.jpg\', \'Navy Blue Small Bear\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Navy Blue Small Bear</p>
+                    <button type="button" onclick="addToCart('Navy Blue Small Bear', 'Navy Blue Small Bear.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -669,24 +677,29 @@
             
             <div class="overflow-y-auto space-y-4 pr-2 flex-grow">
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Black puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Black+Puff+Cat'" alt="Black puff cat" onclick="openGalleryModal(\'Black puff cat.jpg\', \'Black puff cat\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Black puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Black+Puff+Cat'" alt="Black puff cat" onclick="openGalleryModal(\'Black puff cat.jpg\', \'Black puff cat\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Black Puff Cat</p>
+                    <button type="button" onclick="addToCart('Black Puff Cat', 'Black puff cat.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Multi-color puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Multi-color+Puff+Cat'" alt="Multi-color puff cat" onclick="openGalleryModal(\'Multi-color puff cat.jpg\', \'Multi-color puff cat\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Multi-color puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Multi-color+Puff+Cat'" alt="Multi-color puff cat" onclick="openGalleryModal(\'Multi-color puff cat.jpg\', \'Multi-color puff cat\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Multi-color Puff Cat</p>
+                    <button type="button" onclick="addToCart('Multi-color Puff Cat', 'Multi-color puff cat.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Orange puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Orange+Puff+Cat'" alt="Orange puff cat" onclick="openGalleryModal(\'Orange puff cat.jpg\', \'Orange puff cat\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Orange puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Orange+Puff+Cat'" alt="Orange puff cat" onclick="openGalleryModal(\'Orange puff cat.jpg\', \'Orange puff cat\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Orange Puff Cat</p>
+                    <button type="button" onclick="addToCart('Orange Puff Cat', 'Orange puff cat.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Silver puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Silver+Puff+Cat'" alt="Silver puff cat" onclick="openGalleryModal(\'Silver puff cat.jpg\', \'Silver puff cat\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Silver puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Silver+Puff+Cat'" alt="Silver puff cat" onclick="openGalleryModal(\'Silver puff cat.jpg\', \'Silver puff cat\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Silver Puff Cat</p>
+                    <button type="button" onclick="addToCart('Silver Puff Cat', 'Silver puff cat.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="White puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=White+Puff+Cat'" alt="White puff cat" onclick="openGalleryModal(\'White puff cat.jpg\', \'White puff cat\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="White puff cat.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=White+Puff+Cat'" alt="White puff cat" onclick="openGalleryModal(\'White puff cat.jpg\', \'White puff cat\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">White Puff Cat</p>
+                    <button type="button" onclick="addToCart('White Puff Cat', 'White puff cat.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -703,20 +716,24 @@
             
             <div class="overflow-y-auto space-y-4 pr-2 flex-grow">
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="baby purple set blanket in basket 2.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Baby+Purple+Set'" alt="Baby Purple Set" onclick="openGalleryModal(\'baby purple set blanket in basket 2.jpg\', \'Baby Purple Set\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="baby purple set blanket in basket 2.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Baby+Purple+Set'" alt="Baby Purple Set" onclick="openGalleryModal(\'baby purple set blanket in basket 2.jpg\', \'Baby Purple Set\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Baby Purple Set in Basket</p>
+                    <button type="button" onclick="addToCart('Baby Purple Set in Basket', 'baby purple set blanket in basket 2.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="baby blue set blanket in basket close-up.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Baby+Blue+Set'" alt="Baby Blue Set" onclick="openGalleryModal(\'baby blue set blanket in basket close-up.jpg\', \'Baby Blue Set\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="baby blue set blanket in basket close-up.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Baby+Blue+Set'" alt="Baby Blue Set" onclick="openGalleryModal(\'baby blue set blanket in basket close-up.jpg\', \'Baby Blue Set\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Baby Blue Set Close-up</p>
+                    <button type="button" onclick="addToCart('Baby Blue Set Close-up', 'baby blue set blanket in basket close-up.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Pink Rag Doll.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Pink+Rag+Doll'" alt="Pink Rag Doll" onclick="openGalleryModal(\'Pink Rag Doll.jpg\', \'Pink Rag Doll\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Pink Rag Doll.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Pink+Rag+Doll'" alt="Pink Rag Doll" onclick="openGalleryModal(\'Pink Rag Doll.jpg\', \'Pink Rag Doll\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Pink Rag Doll</p>
+                    <button type="button" onclick="addToCart('Pink Rag Doll', 'Pink Rag Doll.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Orange Rag Doll.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Orange+Rag+Doll'" alt="Orange Rag Doll" onclick="openGalleryModal(\'Orange Rag Doll.jpg\', \'Orange Rag Doll\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Orange Rag Doll.jpg" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Orange+Rag+Doll'" alt="Orange Rag Doll" onclick="openGalleryModal(\'Orange Rag Doll.jpg\', \'Orange Rag Doll\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Orange Rag Doll</p>
+                    <button type="button" onclick="addToCart('Orange Rag Doll', 'Orange Rag Doll.jpg')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -733,20 +750,24 @@
             
             <div class="overflow-y-auto space-y-4 pr-2 flex-grow">
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Blue hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Blue+Hat+and+Scarf'" alt="Blue hat and scarf" onclick="openGalleryModal(\'Blue hat and scarf.png\', \'Blue hat and scarf\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Blue hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Blue+Hat+and+Scarf'" alt="Blue hat and scarf" onclick="openGalleryModal(\'Blue hat and scarf.png\', \'Blue hat and scarf\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Blue Hat and Scarf</p>
+                    <button type="button" onclick="addToCart('Blue Hat and Scarf', 'Blue hat and scarf.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="Pink and Black ruffle hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Pink+Black+Ruffle+Set'" alt="Pink and Black ruffle hat and scarf" onclick="openGalleryModal(\'Pink and Black ruffle hat and scarf.png\', \'Pink and Black ruffle hat and scarf\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="Pink and Black ruffle hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Pink+Black+Ruffle+Set'" alt="Pink and Black ruffle hat and scarf" onclick="openGalleryModal(\'Pink and Black ruffle hat and scarf.png\', \'Pink and Black ruffle hat and scarf\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Pink and Black Ruffle Hat & Scarf</p>
+                    <button type="button" onclick="addToCart('Pink and Black Ruffle Hat & Scarf', 'Pink and Black ruffle hat and scarf.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="lakers hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Lakers+Set'" alt="lakers hat and scarf" onclick="openGalleryModal(\'lakers hat and scarf.png\', \'lakers hat and scarf\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="lakers hat and scarf.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Lakers+Set'" alt="lakers hat and scarf" onclick="openGalleryModal(\'lakers hat and scarf.png\', \'lakers hat and scarf\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Lakers Hat and Scarf</p>
+                    <button type="button" onclick="addToCart('Lakers Hat and Scarf', 'lakers hat and scarf.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow border border-brand-lavender bg-brand-lightLavender/30 p-2">
-                    <img src="purple and silver hat and scarf tilt.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Purple+Silver+Set'" alt="purple and silver hat and scarf tilt" onclick="openGalleryModal(\'purple and silver hat and scarf tilt.png\', \'purple and silver hat and scarf tilt\')"  class="w-full h-64 object-cover rounded-xl">
+                    <img src="purple and silver hat and scarf tilt.png" onerror="this.src='https://placehold.co/400x400/6B3E75/ffffff?text=Purple+Silver+Set'" alt="purple and silver hat and scarf tilt" onclick="openGalleryModal(\'purple and silver hat and scarf tilt.png\', \'purple and silver hat and scarf tilt\')"  class="w-full h-64 object-cover rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity">
                     <p class="text-center text-xs font-semibold text-brand-darkPurple mt-2">Purple and Silver Hat & Scarf</p>
+                    <button type="button" onclick="addToCart('Purple and Silver Hat & Scarf', 'purple and silver hat and scarf tilt.png')" class="mt-2 w-full bg-brand-purple hover:bg-brand-darkPurple text-white py-2 rounded-lg text-sm font-semibold">Add to Cart</button>
                 </div>
             </div>
         </div>
