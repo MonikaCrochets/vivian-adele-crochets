@@ -799,20 +799,20 @@
         const cartItems = [];
         const STRIPE_CHECKOUT_ENDPOINT = 'https://vivian-crochet-checkout.vivianadelecrochet.workers.dev/create-checkout-session';
         const stripePriceIds = {
-            'Baby Purple Set in Basket':'price_1UWQnQ0gJrpXNRL2SK3QemPm',
-            'Baby Blue Set Close-up':'price_1UWQnO0gJrpXNRL2lpeGYQIV',
-            'Orange Puff Cat':'price_1UWQnO0gJrpXNRL2HFbWtRor',
-            'Orange Rag Doll':'price_1UWQnN0gJrpXNRL2KneiTtfD',
-            'Pink Rag Doll':'price_1UWQnN0gJrpXNRL22Mm2aah2',
-            'Silver Puff Cat':'price_1UWQnL0gJrpXNRL2kXu9MqqP',
-            'Black Bear':'price_1UWQnK0gJrpXNRL2xrBalhfg',
-            'Navy Blue Small Bear':'price_1UWQnL0gJrpXNRL2DwjGD3Lf',
-            'White Puff Cat':'price_1UWQnL0gJrpXNRL2V73cvT5b',
-            'White and Blue Bear':'price_1UWQnL0gJrpXNRL2KDoNEGN9',
-            'Hot Pink Small Bear':'price_1UWQnJ0gJrpXNRL2G9aHS5ep',
-            'Light Pink Small Bear':'price_1UWQnI0gJrpXNRL2LcvwCGgx',
-            'Black Puff Cat':'price_1UWSPZ0gJrpXNRL29J3S1uUN',
-            'Multi-color Puff Cat':'price_1UWQnL0gJrpXNRL2UnpYali9'
+            'Baby Purple Set in Basket':'price_1UWNOy0I5gCRld6ejYyDABHx',
+            'Baby Blue Set Close-up':'price_1UWNIJ0I5gCRld6eFqFjT1H9',
+            'Orange Puff Cat':'price_1UWPO50I5gCRld6eZ7zoGHKk',
+            'Orange Rag Doll':'price_1UWPbW0I5gCRld6eT3Vt77Wk',
+            'Pink Rag Doll':'price_1UWPhM0I5gCRld6enemqVO69',
+            'Silver Puff Cat':'price_1UWPqr0I5gCRld6efsPgZB4g',
+            'Black Bear':'price_1UWNTK0I5gCRld6etaSEF3wb',
+            'Navy Blue Small Bear':'price_1UWP9P0I5gCRld6eF9Qd1piL',
+            'White Puff Cat':'price_1UWPxk0I5gCRld6eBtIio4ao',
+            'White and Blue Bear':'price_1UWQ1g0I5gCRld6eldE0SyGr',
+            'Hot Pink Small Bear':'price_1UWNvw0I5gCRld6e2fb6H04w',
+            'Light Pink Small Bear':'price_1UWOtK0I5gCRld6emSLflngg',
+            'Black Puff Cat':'price_1UX7lB0I5gCRld6e0dDUczqx',
+            'Multi-color Puff Cat':'price_1UWP360I5gCRld6eFgR4XiCb'
         };
         function addToCart(name, image) {
             if (!stripePriceIds[name]) { showToast('This item is inquiry-only.'); return; }
